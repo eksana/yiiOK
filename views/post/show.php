@@ -16,7 +16,10 @@ $this->registerCssFile('@web/css/style.css',['depends'=>'yii\bootstrap\Bootstrap
 <?php
 
 foreach($cats as $cat){
-	echo $cat->title. '<br/>';
+	echo '<br/>' . $cat->title. '<br/>';
+	echo '<br/>' . $cat->text. '<br/>';
+	echo '<br/>' . $cat->author. '<br/>';
+	echo '<br/>' . $cat->mark. '<br/>';
 }
 
 ?>

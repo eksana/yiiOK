@@ -17,7 +17,9 @@ public function actionShow(){
 	//$this->layout='basic';
 
 
-$cats=article::find()->all();
+//$cats=article::find()->all();
+
+	$cats=article::find()->orderBy(['id'=>SORT_DESC])->all();
 
 return $this->render('show',compact('cats'));
 }
