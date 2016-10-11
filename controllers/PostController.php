@@ -1,6 +1,7 @@
 <?php
 namespace app\controllers;
 use yii\web\Controller;
+use app\models\article;
 
 
 class PostController extends Controller{
@@ -14,7 +15,11 @@ return $this->render('test');
 //одна статья
 public function actionShow(){
 	//$this->layout='basic';
-return $this->render('show');
+
+
+$cats=article::find()->all();
+
+return $this->render('show',compact('cats'));
 }
 }
 	
