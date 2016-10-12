@@ -1,7 +1,10 @@
 <?php
 namespace app\controllers;
 use yii\web\Controller;
-use app\models\article;
+use app\models\TestForm;
+use app\models\Article;
+use app\models\Posts;
+use Yii;
 
 
 class PostController extends Controller{
@@ -9,8 +12,29 @@ class PostController extends Controller{
 	public $layout='basic';
 //все статьи
 public function actionTest(){
-return $this->render('test');
+	$model=new TestForm();
+	/*$model->name='Автор';
+$model->email='mail@mail.com';
+$model->text='Текст статьи';
+$model->save();*/
+
+
+
+ if ($model->load(Yii::$app->request->post()) ){
+ 	if($model->save() ){
+ 		Yii::$app->session->setFlash('success','Данные приняты');
+ 		return $this->refresh();
+ 	}
+ 	else{
+ 		Yii::$app->session->setFlash('error','Ошибка');
+ 		}
+ 	}
+
+ return $this->render('test',compact('model'));
+
+
 }
+
 
 //одна статья
 public function actionShow(){
@@ -20,9 +44,14 @@ public function actionShow(){
 //$cats=article::find()->all();
 
 	$cats=article::find()->orderBy(['id'=>SORT_DESC])->all();
+	$post=posts::find()->orderBy(['id'=>SORT_DESC])->all();
 
-return $this->render('show',compact('cats'));
+return $this->render('show',compact(['cats','post']));
+
+
 }
+
+
 }
 	
 ?>
