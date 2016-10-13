@@ -18,6 +18,8 @@ $model->email='mail@mail.com';
 $model->text='Текст статьи';
 $model->save();*/
 
+//TestForm::deleteAll(['>','id',2]);
+$model::deleteAll(['>','id',1]);
 
 
  if ($model->load(Yii::$app->request->post()) ){
