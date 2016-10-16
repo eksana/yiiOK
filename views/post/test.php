@@ -8,9 +8,9 @@ use yii\helpers\Html;
 
 <?php
 $form=ActiveForm::begin() ?>
-<?=$form->field($model,'name') ?>
-<!--<?=$form->field($model,'email') ?>-->
+<?=$form->field($model,'title') ?>
 <?=$form->field($model,'text') ?>
+<?=$form->field($model,'author') ?>
 
 <?=Html::submitButton('Отправить',['class'=>'btn btn-success'])?>
 <?php

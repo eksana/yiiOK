@@ -44,7 +44,7 @@ AppAsset::register($this);
 
               ['label' => 'New', 'url' => ['/new/testnew']],
 
-               ['label' => 'Annonsment', 'url' => ['/annon/testannon']],
+               ['label' => 'Review', 'url' => ['/rev/testrev']],
 
             ['label' => 'About', 'url' => ['/site/about']],
             ['label' => 'Contact', 'url' => ['/site/contact']],

@@ -4,32 +4,32 @@ namespace app\models;
 //use yii\base\Model;
 
 
-/*class TestForm extends Model{
-	public $name;
-	public $email;
+/*class TestFormnew extends Model{
+	public $title;
 	public $text;
+	public $sourth;
 
 }*/
 
-class TestForm extends ActiveRecord{
+class TestFormrev extends ActiveRecord{
 
 	public static function tableName(){
-	//return 'posts';
-		return 'article';
+	return 'review';
 	}
 
 	public function attributeLabels(){
 	return[
 	'title'=>'Заголовок',
-	'text'=>'Текст сообщения',
-	'author'=>'Автор',
+	'text'=>'Текст',
+	'date'=>'Дата',
+	'dateakt'=>'Дата актуальности',
 
 	];
 	}
 
 	public function rules(){
 	return[
-		[ ['title','text','author'],'required'],
+		[ ['title','text','date','dateakt'],'required'],
 		//['email','email'],
 	];
 }

@@ -12,6 +12,7 @@ class PostController extends Controller{
 
 	public $layout='basic';
 	//public $layout='basicnews';
+
 //все статьи
 public function actionTest(){
 	$model=new TestForm();
@@ -21,7 +22,7 @@ $model->text='Текст статьи';
 $model->save();*/
 
 //TestForm::deleteAll(['>','id',2]);
-$model::deleteAll(['>','id',1]);
+//$model::deleteAll(['>','id',1]);
 
 
  if ($model->load(Yii::$app->request->post()) ){
@@ -48,9 +49,9 @@ public function actionShow(){
 //$cats=article::find()->all();
 
 	$cats=article::find()->orderBy(['id'=>SORT_DESC])->all();
-	$post=posts::find()->orderBy(['id'=>SORT_DESC])->all();
+	//$post=posts::find()->orderBy(['id'=>SORT_DESC])->all();
 
-return $this->render('show',compact(['cats','post']));
+return $this->render('show',compact('cats'));
 
 
 }

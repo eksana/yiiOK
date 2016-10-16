@@ -15,13 +15,13 @@ $this->registerCssFile('@web/css/style.css',['depends'=>'yii\bootstrap\Bootstrap
 ?>
 <?php
 
-foreach($news as $new){
+foreach($rev as $rev){
 echo '<table>';
 echo '<tr>';
-	echo '<br/>' . $new->title. '<br/>';
-	echo '<br/>' . $new->text. '<br/>';
-	echo '<br/>' . $new->sourth. '<br/>';
-	echo '<br/>' . $new->date. '<br/>';
+	echo '<br/>' . $rev->title. '<br/>';
+	echo '<br/>' . $rev->text. '<br/>';
+	echo '<br/>' . $rev->date. '<br/>';
+	echo '<br/>' . $rev->dateakt. '<br/>';
 	
 
 	

@@ -9,8 +9,7 @@ $this->registerJsFile('@web/js/scripts.js',['depends'=>'yii\web\YiiAsset'])
 
 $this->registerCssFile('@web/css/style.css',['depends'=>'yii\bootstrap\BootstrapAsset']);
 
-//$view->registerJsFile ( $url, $options = [], $key = null )
-//yii\bootstrap\BootstrapAsset
+
 
 ?>
 <?php
@@ -38,12 +37,9 @@ foreach($cats as $cat){
 
 <?php
 
-foreach($post as $pos){
+/*foreach($post as $pos){
 
-	/*echo '<br/>' . $cat->title. '<br/>';
-	echo '<br/>' . $cat->text. '<br/>';
-	echo '<br/>' . $cat->author. '<br/>';
-	echo '<br/>' . $cat->mark. '<br/>';*/
+	
 
 	echo '<table style="margin-top:40px;">';
 	echo '<tr>';
@@ -55,6 +51,6 @@ foreach($post as $pos){
 	echo '</tr>';
 
 	echo '</table>';
-}
+}*/
 
 ?>
