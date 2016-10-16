@@ -16,7 +16,7 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-<h1>privet</h1>
+<h1>privetnews</h1>
 <div class="wrap">
 	<div class="container">
 		<ul class="nav nav-pills">
@@ -24,16 +24,17 @@ AppAsset::register($this);
   <li role="presentation" class="active"><?=Html::a('Главная',['site/index']) ?></li>
 
   <!--<li role="presentation"><a href="#">Profile</a></li>-->
-  <li role="presentation"><?=Html::a('Статья-записать',['post/test']) ?></li>
+  
+
+  <li role="presentation"><?=Html::a('Новость-записать',['new/testnew']) ?></li>
 
   
 
   <!--<li role="presentation"><a href="#">Messages</a></li>-->
-  <!--<li role="presentation"><?=Html::a('Статьи',['post/show']) ?></li>-->
-
-  <li role="presentation"><?=Html::a('Статья-вывести',['post/show']) ?></li>
-
   
+
+  <li role="presentation"><?=Html::a('Новость-вывести',['new/shownew']) ?></li>
+
   
 
 </ul>

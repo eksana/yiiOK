@@ -3,6 +3,7 @@ namespace app\controllers;
 use yii\web\Controller;
 use app\models\TestForm;
 use app\models\Article;
+//use app\models\New;
 use app\models\Posts;
 use Yii;
 
@@ -10,6 +11,7 @@ use Yii;
 class PostController extends Controller{
 
 	public $layout='basic';
+	//public $layout='basicnews';
 //все статьи
 public function actionTest(){
 	$model=new TestForm();

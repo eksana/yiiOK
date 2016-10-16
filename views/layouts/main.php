@@ -38,7 +38,13 @@ AppAsset::register($this);
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
 
-             ['label' => 'Articles', 'url' => ['/post/test']],
+             /*['label' => 'Articles', 'url' => ['/post/test']],*/
+
+             ['label' => 'Article', 'url' => ['/post/test']],
+
+              ['label' => 'New', 'url' => ['/new/testnew']],
+
+               ['label' => 'Annonsment', 'url' => ['/annon/testannon']],
 
             ['label' => 'About', 'url' => ['/site/about']],
             ['label' => 'Contact', 'url' => ['/site/contact']],

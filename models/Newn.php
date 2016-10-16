@@ -2,10 +2,9 @@
 namespace app\models;
 use yii\db\ActiveRecord;
 
-class Article extends ActiveRecord
+class Newn extends ActiveRecord
 {
 
 
 }
 ?>
-
