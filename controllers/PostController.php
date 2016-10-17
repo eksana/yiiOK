@@ -11,6 +11,7 @@ use Yii;
 class PostController extends Controller{
 
 	public $layout='basic';
+	//public $layout='main';
 	//public $layout='basicnews';
 
 //все статьи
@@ -48,7 +49,9 @@ public function actionShow(){
 
 //$cats=article::find()->all();
 
-	$cats=article::find()->orderBy(['id'=>SORT_DESC])->all();
+	//$cats=article::find()->orderBy(['id'=>SORT_DESC])->all();
+
+	$cats=article::find()->orderBy(['id'=>SORT_DESC])->limit(10)->all();
 	//$post=posts::find()->orderBy(['id'=>SORT_DESC])->all();
 
 return $this->render('show',compact('cats'));

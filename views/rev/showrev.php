@@ -18,10 +18,10 @@ $this->registerCssFile('@web/css/style.css',['depends'=>'yii\bootstrap\Bootstrap
 foreach($rev as $rev){
 echo '<table>';
 echo '<tr>';
-	echo '<br/>' . $rev->title. '<br/>';
-	echo '<br/>' . $rev->text. '<br/>';
-	echo '<br/>' . $rev->date. '<br/>';
-	echo '<br/>' . $rev->dateakt. '<br/>';
+	echo '<td>' . $rev->title. '</td>';
+	echo '<td>' . $rev->text. '</td>';
+	echo '<td>' . $rev->date.'</td>';
+	echo '<td>' . $rev->dateakt. '</td>';
 	
 
 	

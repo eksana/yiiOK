@@ -22,13 +22,14 @@ class TestFormnew extends ActiveRecord{
 	'title'=>'Заголовок',
 	'text'=>'Текст',
 	'sourth'=>'Источник',
+	'date'=>'Дата',
 
 	];
 	}
 
 	public function rules(){
 	return[
-		[ ['title','text','sourth'],'required'],
+		[ ['title','text','sourth','date'],'required'],
 		//['email','email'],
 	];
 }

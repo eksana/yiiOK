@@ -49,7 +49,8 @@ public function actionShowrev(){
 //return 'news';
 //return $this->render('shownew');
 
-	$rev=review::find()->all();
+	//$rev=review::find()->all();
+	$rev=review::find()->orderBy(['id'=>SORT_DESC])->limit(10)->all();
 
 	/*$cats=article::find()->orderBy(['id'=>SORT_DESC])->all();
 	$post=posts::find()->orderBy(['id'=>SORT_DESC])->all();*/
