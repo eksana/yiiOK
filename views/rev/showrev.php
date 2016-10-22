@@ -16,18 +16,11 @@ $this->registerCssFile('@web/css/style.css',['depends'=>'yii\bootstrap\Bootstrap
 <?php
 
 foreach($rev as $rev){
-echo '<table>';
-echo '<tr>';
-	echo '<td>' . $rev->title. '</td>';
-	echo '<td>' . $rev->text. '</td>';
-	echo '<td>' . $rev->date.'</td>';
-	echo '<td>' . $rev->dateakt. '</td>';
+echo '<table style="margin-top:40px;width:400px;">';
+echo '<tr><td>Название</td><td>Текст</td><td>Дата</td><td>Дата актуальности</td></tr>';
+	echo '<tr><td>'. $rev->title.'</td><td>'.$rev->text.'</td><td>'.$rev->date.'</td><td>'.$rev->dateakt.'</td></tr>';
 	
-
 	
-
-
-	echo '</tr>';
 
 	echo '</table>';
 }

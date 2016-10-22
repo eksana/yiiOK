@@ -11,6 +11,7 @@ use yii\helpers\Html;
 <?=$form->field($model,'title') ?>
 <?=$form->field($model,'text') ?>
 <?=$form->field($model,'author') ?>
+<?=$form->field($model,'path') ?>
 
 <?=Html::submitButton('Отправить',['class'=>'btn btn-success'])?>
 

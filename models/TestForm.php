@@ -23,6 +23,8 @@ class TestForm extends ActiveRecord{
 	'title'=>'Заголовок',
 	'text'=>'Текст сообщения',
 	'author'=>'Автор',
+	//'path'=>'Путь',
+
 
 	];
 	}

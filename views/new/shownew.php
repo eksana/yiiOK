@@ -16,18 +16,10 @@ $this->registerCssFile('@web/css/style.css',['depends'=>'yii\bootstrap\Bootstrap
 <?php
 
 foreach($news as $new){
-echo '<table>';
-echo '<tr>';
-	echo '<td>' . $new->title. '</td>';
-	echo '<td>' . $new->text. '</td>';
-	echo '<td>' . $new->sourth. '</td>';
-	echo '<td>' . $new->date. '</td>';
+echo '<table style="margin-top:40px;width:300px;">';
+echo '<tr><td>Название</td><td>Текст</td><td>Источник</td><td>Дата</td></tr>';
+	echo '<tr><td>' . $new->title.'</td><td>'. $new->text.'</td><td>'. $new->sourth.'</td><td>'. $new->date. '</td></tr>';
 	
-
-	
-
-
-	echo '</tr>';
 
 	echo '</table>';
 }

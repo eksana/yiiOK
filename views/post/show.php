@@ -21,36 +21,13 @@ foreach($cats as $cat){
 	echo '<br/>' . $cat->author. '<br/>';
 	echo '<br/>' . $cat->mark. '<br/>';*/
 
-	echo '<table style="margin-top:40px;">';
-	echo '<tr>';
-	echo '<td>'. $cat->title. '</td>';
-	echo '<td>'. $cat->text. '</td>';
-	echo '<td>'. $cat->author. '</td>';
-
-
-	echo '</tr>';
-
+	echo '<table style="margin-top:40px;width:300px;">';
+	echo '<tr><td>Название</td><td>Текст</td><td>Автор</td></tr>';
+	
+	echo '<tr><td>'. $cat->title. '</td><td>'. $cat->text. '</td><td>'. $cat->author.'</td></tr>';
+	
 	echo '</table>';
 }
 
 ?>
 
-<?php
-
-/*foreach($post as $pos){
-
-	
-
-	echo '<table style="margin-top:40px;">';
-	echo '<tr>';
-	echo '<td>'. $pos->name. '</td>';
-	echo '<td>'. $pos->email. '</td>';
-	echo '<td>'. $pos->text. '</td>';
-
-
-	echo '</tr>';
-
-	echo '</table>';
-}*/
-
-?>
