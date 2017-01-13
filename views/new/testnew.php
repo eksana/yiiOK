@@ -11,7 +11,10 @@ use yii\helpers\Html;
 <?=$formnew->field($modelnew,'title') ?>
 <?=$formnew->field($modelnew,'text') ?>
 <?=$formnew->field($modelnew,'sourth') ?>
-<?=$formnew->field($modelnew,'date') ?>
+<?=$formnew->field($modelnew,'date',[
+    'inputOptions' => [
+        'placeholder' => $modelnew->getAttributeLabel('yyyy-mm-dd'),
+    ],]) ?>
 
 <?=Html::submitButton('Отправить',['class'=>'btn btn-success'])?>
 
